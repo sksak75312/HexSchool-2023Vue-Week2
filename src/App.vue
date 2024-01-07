@@ -1,9 +1,15 @@
-<!-- <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-</script> -->
+<script>
+import { RouterView } from 'vue-router'
+
+export default {
+  components: {
+    RouterView,
+  }
+}
+</script>
 
 <template>
   <div>
-    <button type="button" class="btn btn-primary">測試</button>
+    <RouterView></RouterView>
   </div>
 </template>

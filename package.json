@@ -9,12 +9,15 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "deploy": "vite build && gh-pages -d build"
+    "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
+    "axios": "^1.6.5",
     "bootstrap": "^5.3.2",
     "pinia": "^2.1.7",
+    "sweetalert2": "^11.10.2",
     "vue": "^3.3.11",
+    "vue-axios": "^3.5.2",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
