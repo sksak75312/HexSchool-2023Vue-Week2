@@ -69,7 +69,7 @@ export default {
           Swel.fire({
             ...swel2,
             icon: 'success',
-            title: message,
+            title: message
           })
           this.$router.push('/productList')
         })
@@ -78,7 +78,7 @@ export default {
           Swel.fire({
             ...swel2,
             icon: 'error',
-            title: message,
+            title: message
           })
         })
     }

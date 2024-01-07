@@ -93,7 +93,6 @@ export default {
         .get(`${VITE_API}v2/api/${VITE_PATH}/admin/products/all`)
         .then((res) => {
           this.productsList = res.data.products
-
         })
         .catch((err) => {
           console.log(err)
@@ -105,11 +104,9 @@ export default {
       Swel.fire(delCheckSwel2).then((result) => {
         if (result.isConfirmed) {
           this.$http
-            .delete(
-              `${VITE_API}v2/api/${VITE_PATH}/admin/product/${id}`
-            )
+            .delete(`${VITE_API}v2/api/${VITE_PATH}/admin/product/${id}`)
             .then((res) => {
-              const { message } = res.data;
+              const { message } = res.data
               this.getProducts()
               Swel.fire({
                 title: message,
